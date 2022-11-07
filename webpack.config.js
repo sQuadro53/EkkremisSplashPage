@@ -1,10 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './client/index.js', 
   output: {
-    path: path.resolve(__dirname, '/dist'),
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
     filename: 'bundle.js',
   },
   mode: 'development',
@@ -17,6 +19,11 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
+      {
+        test: /.(css|scss)$/,
+        exclude: /node_modules/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   plugins: [
@@ -26,13 +33,26 @@ module.exports = {
   ],
    devServer: {
     static: {
-      directory: path.join(__dirname, '/client'),
+      // match the output path
+      directory: path.resolve(__dirname, 'dist'),
+      //match the output 'publicPath'
+      publicPath: '/'
     },
+
+    headers: { 'Access-Control-Allow-Origin': '*' },
+    // proxy is required in order to make api calls to express server while using hot-reload webpack server
+    // routes api fetch requests from localhost:8080/api/* (webpack dev server) to localhost:3000/api/* (where our Express server is running)
     proxy: {
-      '/demo': 'http://localhost:3000',
+      '/demo': {
+        target: 'http://localhost:3000/',
+        secure: false,
+      },
     },
+    // Required for Docker to work with dev server
+    host: '0.0.0.0',
     compress: true,
     port: 8080,
+    hot: true
   },
-  devtool: 'inline-source-map',
+  devtool: 'eval-source-map',
 };
