@@ -1,12 +1,12 @@
 import React from 'react';
+import TopBar from './TopBar';
 
 const NotFound = () => {
 
     return (
-        <div>Not Found</div>
+        <TopBar />
     )
 
 }
-
 
 export default NotFound;

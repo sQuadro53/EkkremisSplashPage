@@ -1,0 +1,60 @@
+.top-bar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.5s;
+  width: 100%;
+  height: 75px;
+  border: 1.2px solid #ec633677;
+  box-shadow: 0 1px 3px #ec6336b5;
+}
+
+.header-logo {
+  position: fixed;
+  left: 0;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.url-input {
+    display: flex;
+    justify-content: space-around;
+    height: 50%;
+    margin-left: 250px;
+    margin-right: 20px;
+    align-self: center;
+  }
+  
+  .url-input h5 {
+    position: relative;
+    top: -18px;
+    color: white;
+    font-weight: 800;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-left:5px;
+  }
+  
+  .url-button {
+    position: relative;
+    top: -15px;
+  }
+  
+  #endpoint-url{
+    width: 280px;
+    background-color: #eceaeb;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+  }
+  
+  .login-button-container{
+    display: flex;
+    margin-top: 30px;
+  }
+
+  /* .top-bar button {
+    background-color: red;
+  } */
