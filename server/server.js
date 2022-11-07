@@ -10,6 +10,9 @@ app.use(express.json());
 // image handler
 app.use(express.urlencoded({ extended: true }));
 
+// to statically present the build
+app.use(express.static(path.join(__dirname, '../dist/')));
+
 // route handler
 app.use('/demo', apiRouter);
 
