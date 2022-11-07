@@ -1,0 +1,4 @@
+node_modules
+.gitignore
+.vscode
+.DS-Store

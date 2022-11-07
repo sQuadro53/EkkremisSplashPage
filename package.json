@@ -1,0 +1,35 @@
+{
+  "name": "ekkremissplashpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/server.js --development",
+    "build": "webpack --production",
+    "dev": "concurrently \"cross-env webpack serve --open\" \"npm start\" --development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sQuadro53/EkkremisSplashPage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sQuadro53/EkkremisSplashPage/issues"
+  },
+  "homepage": "https://github.com/sQuadro53/EkkremisSplashPage#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^2.3.0",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^9.1.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^8.27.0",
+    "webpack": "^5.74.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
