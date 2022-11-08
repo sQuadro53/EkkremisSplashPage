@@ -1,6 +1,7 @@
 import React from 'react';
 import TopBar from './TopBar';
 import People from './People';
+import Footer from './Footer';
 import '../styles/Home.css';
 
 const Home = () => {
@@ -92,6 +93,9 @@ const Home = () => {
           
           <div>
      <People/>
+          </div>
+          <div>
+     <Footer/>
           </div>
       </div>
     );

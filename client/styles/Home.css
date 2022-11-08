@@ -13,7 +13,7 @@
     row-gap: 40px;
     max-width: 80%;
     margin-top: 150px;
-    margin-left: 250px;
+    margin-left: 200px;
     color: white;
 }
 
@@ -70,7 +70,14 @@
 .description{}
 
 
-.demo-container{}
+.demo-container{
+    border: 3px solid #ffffff;
+    max-width: 80%;
+    margin-top: 75px;
+    margin-left: 200px;
+    padding: 20px;
+    color: white;
+}
 
 .Demo{}
 
