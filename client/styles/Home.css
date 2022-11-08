@@ -1,0 +1,86 @@
+.header{
+    display: block;
+}
+
+.intro-container{
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex: 1;
+    max-width: 800px; */
+    /* justify-content: space-around;   */
+    /* align-items: center;
+    margin: 50px; */
+    border: 3px solid #ffffff; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    max-width: 80%;
+    margin-top: 150px;
+    margin-left: 250px;
+}
+
+
+
+/* display: flex;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    align-items: center; */
+
+.logo{
+    display: inline-block;
+    flex: 1;
+    padding: 10px;
+    object-fit: fill;
+}
+
+.logo > img {
+    width: 400px;
+    height: auto; 
+} 
+
+.header-logo{
+    display: inline-block;
+    flex: 1;
+    min-width: 40%;
+    padding: 50px;
+}
+
+.highlights{
+    display: inline-block;
+    flex: 1;
+    min-width: 40%;
+    padding: 50px;
+}
+
+.highlight-box{
+    display: inline-block;
+    flex: 1;
+    min-width: 40%;
+    padding: 50px;
+}
+.features{
+    display: inline-block;
+    flex: 1;
+    min-width: 40%;
+    padding: 50px;
+}
+
+.list-heading{}
+
+.list-description{}
+
+.description{}
+
+
+.demo-container{}
+
+.Demo{}
+
+.crew-container{}
+
+.crew-card{}
+
+.contact{}

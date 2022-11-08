@@ -7,7 +7,11 @@ import { Link } from "react-router-dom"
 const TopBar = () => {
   return(
     <div className='top-bar'>
-      <img className='header-logo' src={require('../img/Ekkremis-logo-dark.png')} alt="Ekkremis" height='100px' width='180px'/>
+
+      <Link to='/home'>
+        <img className='header-logo-font' src={require('../img/Ekkremis-logo-dark.png')} alt="Ekkremis" height='auto' width='250px'/>
+      </Link>
+      
       <div className='login-button-container'>
         <Link to='/home'>
           <Button 
