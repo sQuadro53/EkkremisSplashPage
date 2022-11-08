@@ -90,6 +90,9 @@ const Home = () => {
                 <div className ="Demo"></div>
           </div>
           
+          <div>
+     <People/>
+          </div>
       </div>
     );
 

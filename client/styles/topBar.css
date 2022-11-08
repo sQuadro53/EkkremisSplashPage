@@ -1,14 +1,16 @@
 .top-bar {
   position: fixed;
   top: 0;
+  left: -5px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   transition: 0.5s;
-  width: 100%;
+  width: 110%;
   height: 75px;
   border: 1.2px solid #ec633677;
   box-shadow: 0 1px 3px #ec6336b5;
+  background-color: #013c64;
 }
 
 .header-logo-font{

@@ -1,0 +1,31 @@
+.crew-container {
+    border: 3px solid #ffffff;
+    max-width: 80%;
+    margin-top: 150px;
+    margin-left: 250px;
+    padding: 20px;
+    color: white;
+}
+
+.all-crew-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.crew-card {
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgb(222, 145, 41);
+    margin: 20px;
+}
+
+.crew-card:hover{
+    box-shadow: 0 0 10px 0 rgb(246, 209, 76);
+    } 
+
+.crew-contact {
+    display: flex;
+    justify-content: space-around;
+}
+
