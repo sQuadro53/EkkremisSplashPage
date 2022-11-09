@@ -68,7 +68,7 @@ const People = () => {
         </div>
         <div className="crew-card">
           <img
-            src={require("../img/cesar.jpeg")}
+            src={require("../img/Cesar-s.jpeg")}
             width="120"
             height="120"
             viewbox="0 0 16 16"
@@ -98,7 +98,7 @@ const People = () => {
         </div>
         <div className="crew-card">
           <img
-            src={require("../img/turtle.png")}
+            src={require("../img/z.jpg")}
             width="120"
             height="120"
             viewbox="0 0 16 16"

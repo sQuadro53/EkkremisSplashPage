@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --config ./webpack.config.js",
     "start": "node ./server/server.js",
-    "dev:hot": "NODE_ENV=development nodemon ./server/server.js & webpack-dev-server --open --hot"
+    "dev:hot": "NODE_ENV=development nodemon ./server/server.js & webpack-dev-server --open --hot",
+    "docker-dev:hot": "docker-compose -f docker-compose-dev-hot.yml up"
   },
   "repository": {
     "type": "git",
