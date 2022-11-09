@@ -11,19 +11,34 @@ const Docs = () => {
     <div className="container">
       <TopBar />
       <main>
-        <h2 id="initial-header">Initial header</h2>
+        <h2 id="initial-header">Ekkremis</h2>
         <p>{DummyText}</p>
-        <h2 id="second-header">Second header</h2>
+        <h2 id="second-header">Running the Electron App</h2>
         <p>{DummyText}</p>
-        <h3 id="third-header">Third header</h3>
-        <p>{DummyText}</p>
-        <p>{DummyText}</p>
-        <h2 id="fourth-header">Fourth header</h2>
+        <h3 id="third-header">Development Mode</h3>
         <p>{DummyText}</p>
         <p>{DummyText}</p>
+        <h3 id="third-header">Production Mode</h3>
         <p>{DummyText}</p>
         <p>{DummyText}</p>
-        <h3 id="fifth-header">Fifth header</h3>
+        <h2 id="third-header">Using Ekkremis</h2>
+        <p>{DummyText}</p>
+        <p>{DummyText}</p>
+        <h2 id="fourth-header">Kubernetes Requirements</h2>
+        <p>{DummyText}</p>
+        <p>{DummyText}</p>
+        <p>{DummyText}</p>
+        <p>{DummyText}</p>
+        <h2 id="fifth-header">Prometheus Requirements</h2>
+        <p>{DummyText}</p>
+        <p>{DummyText}</p>
+        <h2 id="sixth-header">Features</h2>
+        <p>{DummyText}</p>
+        <p>{DummyText}</p>
+        <h2 id="seventh-header">Upcoming Features</h2>
+        <p>{DummyText}</p>
+        <p>{DummyText}</p>
+        <h2 id="eighth-header">Technologies</h2>
         <p>{DummyText}</p>
         <p>{DummyText}</p>
       </main>

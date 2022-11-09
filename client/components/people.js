@@ -9,7 +9,7 @@ const People = () => {
         <div className="all-crew-cards">
         <div className="crew-card">
           <img
-            src={require("../img/forest.png")}
+            src={require("../img/rilo.png")}
             width="140"
             height="140"
             viewbox="0 0 16 16"
@@ -19,7 +19,7 @@ const People = () => {
             <h3>Software Engineer</h3>
           </div>
           <div className="crew-contact">
-            <a href="https://github.com/orgs/sQuadro53/people/WaffleCloud">
+            <a href="../img/rilo.png">
               <img
                 src={require("../img/github.png")}
                 width="60"
