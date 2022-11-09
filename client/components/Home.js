@@ -129,9 +129,7 @@ const Home = () => {
               Optomized Kubernetes Lifecycles
             </h3>
             <p className="features-paragraph">
-              Pending pods are ubiquitous and unaviodable. What is aviodable is
-              how long they stay there. If you're not convinced, see just how
-              much efficiency you gain by applying Ekkremis solutions with a
+              See just how much efficiency you gain by applying Ekkremis solutions with a
               dashboard organized by pod status.
             </p>
           </div>
