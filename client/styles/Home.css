@@ -1,7 +1,3 @@
-.whole{
-    /* display: block; */
-    
-}
 
 .intro-container{
     margin-top: 110px;
@@ -36,11 +32,7 @@
     }
 
 .logo{
-    display: block;
-    /* flex: 1; */
     padding: 10px;
-    /* object-fit: fill; */
-    
 }
 
 .logo > img {
@@ -88,7 +80,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 4rem;
-    /* margin-top: 0.6rem;      so as not be so close to whatever's above*/
 }
 
 .features-square{}
@@ -112,13 +103,6 @@
     text-align: left;
 }
 
-.list-heading{}
-
-.list-description{}
-
-.description{}
-
-
 .demo-container{
     align-self: center;
     margin-left: auto;
@@ -135,10 +119,3 @@
 }
 
 .Demo{}
-
-.crew-container{
-}
-
-.crew-card{}
-
-.contact{}

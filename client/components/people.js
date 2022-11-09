@@ -1,12 +1,11 @@
-import React from 'react';
-import '../styles/People.css';
+import React from "react";
+import "../styles/People.css";
 
 const People = () => {
-
-    return (
-      <div className="crew-container">
-        <h1 className="">Meet the team</h1>
-        <div className="all-crew-cards">
+  return (
+    <div className="crew-container">
+      <h1 className="">Meet the team</h1>
+      <div className="all-crew-cards">
         <div className="crew-card">
           <img
             src={require("../img/rilo.png")}
@@ -19,7 +18,7 @@ const People = () => {
             <h5>Software Engineer</h5>
           </div>
           <div className="crew-contact">
-            <a href="https://github.com/WaffleCloud" target="_blank" >
+            <a href="https://github.com/WaffleCloud" target="_blank">
               <img
                 src={require("../img/github.png")}
                 width="30"
@@ -27,7 +26,7 @@ const People = () => {
                 viewbox="0 0 16 16"
               ></img>
             </a>
-            <a href="https://github.com/WaffleCloud" target="_blank" >
+            <a href="https://github.com/WaffleCloud" target="_blank">
               <img
                 src={require("../img/linkedin.png")}
                 width="30"
@@ -49,7 +48,7 @@ const People = () => {
             <h5>Software Engineer</h5>
           </div>
           <div className="crew-contact">
-            <a href="https://github.com/forestleigh" target="_blank" >
+            <a href="https://github.com/forestleigh" target="_blank">
               <img
                 src={require("../img/github.png")}
                 width="30"
@@ -57,7 +56,7 @@ const People = () => {
                 // viewbox="0 0 16 16"
               ></img>
             </a>
-            <a href="https://www.linkedin.com/in/forestleigh/" target="_blank" >
+            <a href="https://www.linkedin.com/in/forestleigh/" target="_blank">
               <img
                 src={require("../img/linkedin.png")}
                 width="30"
@@ -79,7 +78,7 @@ const People = () => {
             <h5>Software Engineer</h5>
           </div>
           <div className="crew-contact">
-            <a href="https://github.com/Cesar-Quintanilla" target="_blank" >
+            <a href="https://github.com/Cesar-Quintanilla" target="_blank">
               <img
                 src={require("../img/github.png")}
                 width="30"
@@ -87,7 +86,7 @@ const People = () => {
                 viewbox="0 0 16 16"
               ></img>
             </a>
-            <a href="https://github.com/Cesar-Quintanilla" target="_blank" >
+            <a href="https://github.com/Cesar-Quintanilla" target="_blank">
               <img
                 src={require("../img/linkedin.png")}
                 width="30"
@@ -109,7 +108,10 @@ const People = () => {
             <h5>Software Engineer</h5>
           </div>
           <div className="crew-contact">
-            <a href="https://github.com/orgs/sQuadro53/people/zihaoli518" target="_blank" >
+            <a
+              href="https://github.com/orgs/sQuadro53/people/zihaoli518"
+              target="_blank"
+            >
               <img
                 src={require("../img/github.png")}
                 width="30"
@@ -117,7 +119,7 @@ const People = () => {
                 viewbox="0 0 16 16"
               ></img>
             </a>
-            <a href="https://www.linkedin.com/in/lizihao/" target="_blank" >
+            <a href="https://www.linkedin.com/in/lizihao/" target="_blank">
               <img
                 src={require("../img/linkedin.png")}
                 width="30"
@@ -139,7 +141,10 @@ const People = () => {
             <h5>Software Engineer</h5>
           </div>
           <div className="crew-contact">
-            <a href="https://github.com/orgs/sQuadro53/people/matthewmpan" target="_blank" >
+            <a
+              href="https://github.com/orgs/sQuadro53/people/matthewmpan"
+              target="_blank"
+            >
               <img
                 src={require("../img/github.png")}
                 width="30"
@@ -147,7 +152,7 @@ const People = () => {
                 viewbox="0 0 16 16"
               ></img>
             </a>
-            <a href="https://www.linkedin.com/in/matthewpan/" target="_blank" >
+            <a href="https://www.linkedin.com/in/matthewpan/" target="_blank">
               <img
                 src={require("../img/linkedin.png")}
                 width="30"
@@ -157,11 +162,9 @@ const People = () => {
             </a>
           </div>
         </div>
-        </div>
-        
       </div>
-    );
-
-}
+    </div>
+  );
+};
 
 export default People;
