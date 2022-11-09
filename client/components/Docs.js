@@ -14,7 +14,8 @@ const Docs = () => {
         <TopBar />
         <main>
           <h2 id="initial-header">Ekkremis</h2>
-          <p>Ekkremis is greek for Pending.... </p>
+          <p>Ekkremis (εκκρεμής) is greek for Pending. While pending pods are enevitable, there's no reason to keep the around or forget about them. Push updates to your cluster worry free with Ekkremis alerts and lifecycle optomization dashboard.  </p>
+          
           <h2 id="second-header">Running the Electron App</h2>
           <p>{DummyText}</p>
           <h3 id="third-header">Development Mode</h3>
@@ -23,26 +24,32 @@ const Docs = () => {
           <h3 id="third-header">Production Mode</h3>
           <p>{DummyText}</p>
           <p>{DummyText}</p>
+          
           <h2 id="third-header">Using Ekkremis</h2>
           <p>{DummyText}</p>
           <p>{DummyText}</p>
+          
           <h2 id="fourth-header">Kubernetes Requirements</h2>
           <p>{DummyText}</p>
           <p>{DummyText}</p>
           <p>{DummyText}</p>
           <p>{DummyText}</p>
+          
           <h2 id="fifth-header">Prometheus Requirements</h2>
           <p>{DummyText}</p>
           <p>{DummyText}</p>
           <h3 id="fifth-header">Connecting Prometheus to Ekkremis</h3>
           <p>{DummyText}</p>
           <p>{DummyText}</p>
+          
           <h2 id="sixth-header">Features</h2>
           <p>{DummyText}</p>
           <p>{DummyText}</p>
+          
           <h2 id="seventh-header">Upcoming Features</h2>
           <p>{DummyText}</p>
           <p>{DummyText}</p>
+          
           <h2 id="eighth-header">Technologies</h2>
           <p>{DummyText}</p>
           <p>{DummyText}</p>

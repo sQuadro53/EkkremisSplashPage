@@ -35,8 +35,8 @@ const Home = () => {
               <div>
                 <h3 className="list-heading">Lightweight and Simple</h3>
                 <p className="list-description">
-                  Minimal dependiencies and simple learning curve for
-                  additioonal technologies
+                  Minimal dependencies and a simple learning curve for
+                  additional technologies
                 </p>
               </div>
             </div>
@@ -52,7 +52,7 @@ const Home = () => {
               <div>
                 <h3 className="list-heading">Optomize your Time</h3>
                 <p className="list-description">
-                  Ekkremis automates quireies that were previously manual
+                  Ekkremis automates previously manual queries
                 </p>
               </div>
             </div>
@@ -68,7 +68,7 @@ const Home = () => {
               <div>
                 <h3 className="list-heading">Open Source</h3>
                 <p className="list-description">
-                  Contributors and suggetions for improvements are encouraged
+                  Contributors and suggestions for improvements are encouraged
                 </p>
               </div>
             </div>
@@ -78,12 +78,21 @@ const Home = () => {
         <div className="description">
           <h1>Cluster Lifecycle Insights</h1>
           <p>
-            Leveraging Prometheus and Prometheus Alerts to optomize Kubernetes
-            clusters and help identify pods stuck in pending phase. The Ekkremis
-            Lifecycle Dashboard renders pod metrics and suggests solutions for
-            unhealthy pods.
+            Pods in Kubernetes have a lifecycle composed of several phases shown
+            in the diagram below. While most pods quickly progress from Pending
+            to Running, some pods can get stuck in Pending. Troubleshooting
+            pending pods and understanding the changes needed to solve the issue
+            can be time-consuming and require many manual queries. Ekkremis is
+            here to help!
           </p>
+          <img
+            src="../img/pod_lifecycle.png"
+            alt="diagram of the kubernetes pod lifcycle"
+            height="auto"
+            width="300px"
+          ></img>
         </div>
+
         <figure className="features-container">
           <div className="features-square">
             <div className="features-icon">
@@ -99,9 +108,9 @@ const Home = () => {
             </div>
             <h3 className="features-header3">Automated Alerts</h3>
             <p className="features-paragraph">
-              No more forgetting to manually query to find pods stuck in pending
-              phase. Instead, customize email or slack alerts that will suggest
-              solutions in a timely fashion.
+              No more forgetting to manually query to find pods stuck in the
+              pending phase. Instead, customize email or slack alerts that will
+              suggest solutions in a timely fashion.
             </p>
           </div>
           <div className="features-square">
@@ -120,9 +129,10 @@ const Home = () => {
               Optomized Kubernetes Lifecycles
             </h3>
             <p className="features-paragraph">
-              See just how much efficiency you gain by applying Ekkremis
-              solutions. The Ekkremis electron app has preconfigured queries and
-              charts organized by pod lifecycle status.
+              Pending pods are ubiquitous and unaviodable. What is aviodable is
+              how long they stay there. If you're not convinced, see just how
+              much efficiency you gain by applying Ekkremis solutions with a
+              dashboard organized by pod status.
             </p>
           </div>
           <div className="features-square">
@@ -159,13 +169,11 @@ const Home = () => {
                 />
               </svg>
             </div>
-            <h3 className="features-header3">
-              Suggested Solutions for Common Errors
-            </h3>
+            <h3 className="features-header3">Enhanced Error Handling</h3>
             <p className="features-paragraph">
               If a Pod is stuck in Pending it means that it can not be scheduled
               onto a node. There are a variety of common reasons and Ekkremis
-              can identfiy them.
+              can identfiy them and suggest tailored soulutions.
             </p>
           </div>
         </figure>
@@ -173,6 +181,10 @@ const Home = () => {
 
       <div className="demo-container">
         <h1 className="">Demo video</h1>
+        <p>
+          See the Ekkremis lifecycle optomization dashboard with Electron
+          runtime in action!{" "}
+        </p>
         <div className="Demo"></div>
       </div>
 
