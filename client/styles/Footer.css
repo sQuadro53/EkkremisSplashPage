@@ -1,17 +1,22 @@
 .footer-bar {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin:-7px;
     margin-top: 75px;
-    width: 110%;
-    height: 75px;
-    border: 1.2px solid #ec633677;
-    box-shadow: 3px 1px 0 #ec6336b5;
-    background-color: #020849;
-    
+    margin-bottom: 0px;
+    width: 103%;
+    height: 55px;
   }
 
   .footer-logo-font{
-    margin-top: 15px;
+    /* margin-top: 35px; */
+    margin-left: 40px;
+  }
+
+  .logo-container {
+    margin-right: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
   }

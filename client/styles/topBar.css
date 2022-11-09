@@ -8,8 +8,7 @@
   transition: 0.5s;
   width: 110%;
   height: 75px;
-  border: 1.2px solid #ec633677;
-  box-shadow: 0 1px 3px #ec6336b5;
+  padding-top: 8px;
   background-color: #013c64;
   z-index:10;
 }

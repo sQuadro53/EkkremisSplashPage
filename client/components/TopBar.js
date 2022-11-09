@@ -26,14 +26,14 @@ const TopBar = () => {
           />
         </Link>
         
-        <a href='https://github.com/oslabs-beta/Ekkremis'> 
+        <a href='https://github.com/oslabs-beta/Ekkremis' target="_blank" >
           <Button 
             className="FPbutton"
             children="Github"
           />
         </a>
           
-        <a href='https://www.google.com/'>
+        <a href='https://www.google.com/' target="_blank" >
           <Button 
             className="FPbutton"
             children="Blog"
