@@ -21,7 +21,7 @@ const Footer = () => {
       </a>
 
       <a href=''>
-        <img className='footer-medium-logo' src={require('../img/github.png')} alt="Ekkremis" height='auto' width='50px'/>
+        <img className='footer-medium-logo' src={require('../img/medium.png')} alt="Ekkremis" height='auto' width='50px'/>
       </a>
       
     </div>

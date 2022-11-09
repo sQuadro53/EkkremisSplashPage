@@ -9,9 +9,9 @@ const People = () => {
         <div className="all-crew-cards">
         <div className="crew-card">
           <img
-            src={require("../img/fish.png")}
-            width="60"
-            height="60"
+            src={require("../img/forest.png")}
+            width="140"
+            height="140"
             viewbox="0 0 16 16"
           ></img>
           <div className="crew-member">
@@ -19,7 +19,7 @@ const People = () => {
             <h3>Software Engineer</h3>
           </div>
           <div className="crew-contact">
-            <a href="default.asp">
+            <a href="https://github.com/orgs/sQuadro53/people/WaffleCloud">
               <img
                 src={require("../img/github.png")}
                 width="60"
@@ -69,9 +69,9 @@ const People = () => {
         </div>
         <div className="crew-card">
           <img
-            src={require("../img/fish.png")}
-            width="60"
-            height="60"
+            src={require("../img/seahorse.png")}
+            width="140"
+            height="140"
             viewbox="0 0 16 16"
           ></img>
           <div className="crew-member">
@@ -79,7 +79,7 @@ const People = () => {
             <h3>Software Engineer</h3>
           </div>
           <div className="crew-contact">
-            <a href="default.asp">
+            <a href="https://github.com/Cesar-Quintanilla">
               <img
                 src={require("../img/github.png")}
                 width="60"
@@ -99,9 +99,9 @@ const People = () => {
         </div>
         <div className="crew-card">
           <img
-            src={require("../img/fish.png")}
-            width="60"
-            height="60"
+            src={require("../img/turtle.png")}
+            width="140"
+            height="140"
             viewbox="0 0 16 16"
           ></img>
           <div className="crew-member">
@@ -109,7 +109,7 @@ const People = () => {
             <h3>Software Engineer</h3>
           </div>
           <div className="crew-contact">
-            <a href="default.asp">
+            <a href="https://github.com/orgs/sQuadro53/people/zihaoli518">
               <img
                 src={require("../img/github.png")}
                 width="60"
@@ -117,7 +117,7 @@ const People = () => {
                 viewbox="0 0 16 16"
               ></img>
             </a>
-            <a href="default.asp">
+            <a href="https://www.linkedin.com/in/lizihao/">
               <img
                 src={require("../img/linkedin.png")}
                 width="60"
@@ -129,9 +129,9 @@ const People = () => {
         </div>
         <div className="crew-card">
           <img
-            src={require("../img/fish.png")}
-            width="60"
-            height="60"
+            src={require("../img/starfish.png")}
+            width="140"
+            height="140"
             viewbox="0 0 16 16"
           ></img>
           <div className="crew-member">
@@ -139,7 +139,7 @@ const People = () => {
             <h3>Software Engineer</h3>
           </div>
           <div className="crew-contact">
-            <a href="default.asp">
+            <a href="https://github.com/orgs/sQuadro53/people/matthewmpan">
               <img
                 src={require("../img/github.png")}
                 width="60"
@@ -147,7 +147,7 @@ const People = () => {
                 viewbox="0 0 16 16"
               ></img>
             </a>
-            <a href="default.asp">
+            <a href="https://www.linkedin.com/in/matthewpan/">
               <img
                 src={require("../img/linkedin.png")}
                 width="60"
