@@ -26,7 +26,7 @@ const People = () => {
                 viewbox="0 0 16 16"
               ></img>
             </a>
-            <a href="https://github.com/WaffleCloud" target="_blank">
+            <a href="https://www.linkedin.com/in/taywade" target="_blank">
               <img
                 src={require("../img/linkedin.png")}
                 width="30"
@@ -131,7 +131,7 @@ const People = () => {
         </div>
         <div className="crew-card">
           <img
-            src={require("../img/starfish.png")}
+            src={require("../img/matt.jpeg")}
             width="120"
             height="120"
             viewbox="0 0 16 16"
