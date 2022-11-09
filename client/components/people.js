@@ -15,23 +15,23 @@ const People = () => {
             viewbox="0 0 16 16"
           ></img>
           <div className="crew-member">
-            <h2>Rilo Wade</h2>
-            <h3>Software Engineer</h3>
+            <h4>Rilo Wade</h4>
+            <h5>Software Engineer</h5>
           </div>
           <div className="crew-contact">
             <a href="../img/rilo.png">
               <img
                 src={require("../img/github.png")}
-                width="60"
-                height="60"
+                width="30"
+                height="30"
                 viewbox="0 0 16 16"
               ></img>
             </a>
             <a href="default.asp">
               <img
                 src={require("../img/linkedin.png")}
-                width="60"
-                height="60"
+                width="30"
+                height="30"
                 viewbox="0 0 16 16"
               ></img>
             </a>
@@ -42,26 +42,26 @@ const People = () => {
             src={require("../img/forest.png")}
             width="140"
             height="140"
-            viewbox="0 0 16 16"
+            // viewbox="0 0 16 16"
           ></img>
           <div className="crew-member">
-            <h2>Forest Leigh</h2>
-            <h3>Software Engineer</h3>
+            <h4>Forest Leigh</h4>
+            <h5>Software Engineer</h5>
           </div>
           <div className="crew-contact">
             <a href="https://github.com/forestleigh">
               <img
                 src={require("../img/github.png")}
-                width="60"
-                height="60"
-                viewbox="0 0 16 16"
+                width="30"
+                height="30"
+                // viewbox="0 0 16 16"
               ></img>
             </a>
             <a href="https://www.linkedin.com/in/forestleigh/">
               <img
                 src={require("../img/linkedin.png")}
-                width="60"
-                height="60"
+                width="30"
+                height="30"
                 viewbox="0 0 16 16"
               ></img>
             </a>
@@ -75,23 +75,23 @@ const People = () => {
             viewbox="0 0 16 16"
           ></img>
           <div className="crew-member">
-            <h2>Cesar Quintanilla</h2>
-            <h3>Software Engineer</h3>
+            <h4>Cesar Quintanilla</h4>
+            <h5>Software Engineer</h5>
           </div>
           <div className="crew-contact">
             <a href="https://github.com/Cesar-Quintanilla">
               <img
                 src={require("../img/github.png")}
-                width="60"
-                height="60"
+                width="30"
+                height="30"
                 viewbox="0 0 16 16"
               ></img>
             </a>
             <a href="default.asp">
               <img
                 src={require("../img/linkedin.png")}
-                width="60"
-                height="60"
+                width="30"
+                height="30"
                 viewbox="0 0 16 16"
               ></img>
             </a>
@@ -105,23 +105,23 @@ const People = () => {
             viewbox="0 0 16 16"
           ></img>
           <div className="crew-member">
-            <h2>Zihao Li</h2>
-            <h3>Software Engineer</h3>
+            <h4>Zihao Li</h4>
+            <h5>Software Engineer</h5>
           </div>
           <div className="crew-contact">
             <a href="https://github.com/orgs/sQuadro53/people/zihaoli518">
               <img
                 src={require("../img/github.png")}
-                width="60"
-                height="60"
+                width="30"
+                height="30"
                 viewbox="0 0 16 16"
               ></img>
             </a>
             <a href="https://www.linkedin.com/in/lizihao/">
               <img
                 src={require("../img/linkedin.png")}
-                width="60"
-                height="60"
+                width="30"
+                height="30"
                 viewbox="0 0 16 16"
               ></img>
             </a>
@@ -135,23 +135,23 @@ const People = () => {
             viewbox="0 0 16 16"
           ></img>
           <div className="crew-member">
-            <h2>Matt Pan</h2>
-            <h3>Software Engineer</h3>
+            <h4>Matt Pan</h4>
+            <h5>Software Engineer</h5>
           </div>
           <div className="crew-contact">
             <a href="https://github.com/orgs/sQuadro53/people/matthewmpan">
               <img
                 src={require("../img/github.png")}
-                width="60"
-                height="60"
+                width="30"
+                height="30"
                 viewbox="0 0 16 16"
               ></img>
             </a>
             <a href="https://www.linkedin.com/in/matthewpan/">
               <img
                 src={require("../img/linkedin.png")}
-                width="60"
-                height="60"
+                width="30"
+                height="30"
                 viewbox="0 0 16 16"
               ></img>
             </a>

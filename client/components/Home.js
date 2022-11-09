@@ -7,14 +7,13 @@ import '../styles/Home.css';
 const Home = () => {
 
     return (
-      <div>
-        <div className="header">
-          <TopBar />
-        </div>
 
-      <div className='centered'>
+      <div className="whole">
         
+          <TopBar />
+      
         <div className="intro-container">
+
           <div className="logo">
             <img
               className="header-logo"
@@ -29,6 +28,7 @@ const Home = () => {
             <h1>Introducing Ekkremis</h1>
             <h2>A periscopic view into Kubernetes pod lifecycles</h2>
             <div className="highlights-container">
+
               <div className="highlight-box">
                 <img
                   src={require('../img/fish.png')}
@@ -36,6 +36,7 @@ const Home = () => {
                   height="60"
                   viewbox="0 0 16 16"
                 ></img>
+
                 <div>
                   <li className="list-heading">Lightweight and Simple</li>
                   <li className="list-description">
@@ -43,21 +44,25 @@ const Home = () => {
                     technologies
                   </li>
                 </div>
+
               </div>
+
               <div className="highlight-box">
+
                 <img
                   src={require('../img/starfish.png')}
                   width="60"
                   height="60"
                   viewbox="0 0 16 16"
                 ></img>
+
                 <div>
                   <li className="list-heading">Optomize your time</li>
-                  <li className="list-description">
-                    Ekkremis automates quireies that were previously manual
-                  </li>
+                  <li className="list-description">Ekkremis automates quireies that were previously manual</li>
                 </div>
+
               </div>
+
               <div className="highlight-box">
                 <img
                   src={require('../img/turtle.png')}
@@ -68,13 +73,15 @@ const Home = () => {
                 
                 <div>
                   <li className="list-heading">Open Source</li>
-                  <li className="list-description">
-                    Contributors and suggetions for imrpovments are encouraged
-                  </li>
+                  <li className="list-description">Contributors and suggetions for imrpovments are encouraged</li>
                 </div>
+
               </div>
+
             </div>
+
           </div>
+
           <div className="description">
             <h1>Cluster Monitoring and Lifecycle Insights</h1>
             <p>
@@ -116,21 +123,22 @@ const Home = () => {
           </figure>
     
         </div>
+
         <div className="demo-container">
-                <h1 className ="">Demo video</h1>
-                <div className ="Demo"></div>
-          </div>
+          <h1 className ="">Demo video</h1>
+          <div className ="Demo"></div>
+        </div>
           
           <div>
-     <People/>
+            <People/>
           </div>
-          <div>
-     <Footer/>
-          </div>
-      </div>
-    </div>
-    );
 
+          <div>
+            <Footer/>
+          </div>
+
+      </div>
+    );
 }
 
 export default Home; 
