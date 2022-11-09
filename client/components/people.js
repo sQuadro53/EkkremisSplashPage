@@ -68,7 +68,7 @@ const People = () => {
         </div>
         <div className="crew-card">
           <img
-            src={require("../img/seahorse.png")}
+            src={require("../img/cesar.jpeg")}
             width="120"
             height="120"
             viewbox="0 0 16 16"
@@ -86,7 +86,7 @@ const People = () => {
                 viewbox="0 0 16 16"
               ></img>
             </a>
-            <a href="https://github.com/Cesar-Quintanilla" target="_blank">
+            <a href="https://www.linkedin.com/in/quintanilla-cesar" target="_blank">
               <img
                 src={require("../img/linkedin.png")}
                 width="30"
