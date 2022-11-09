@@ -12,17 +12,18 @@ body {
   }
   
   main {
-    max-width: 800px;
-    background-color: #161822;
+    max-width: 700px;
+    background-color: #161822c7;
     padding: 16px;
     border-radius: 5px;
     margin-left: 8px;
+    text-align: left;
   }
   
   nav {
-    padding-top: 150px;
-    width: 220px;
-    min-width: 220px;
+    padding-top: 100px;
+    width: 330px;
+    min-width: 250px;
     padding: 16px;
     margin-left: 8px;
     border-radius: 5px;
@@ -31,7 +32,8 @@ body {
     top: 50px;
     height: 1000px;
     overflow: auto;
-    background-color: #1F2233;
+    text-align: left;
+    background-color: #1f2233c3;
   }
   
   @media screen and (max-width: 900px) {

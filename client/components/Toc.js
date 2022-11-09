@@ -94,6 +94,10 @@ const Toc = () => {
   
     return (
       <nav aria-label="Table of contents">
+        <img
+            src={require("../img/periscope.png")}
+            width= "250px"
+          ></img>
         <h1>Contents</h1>
         <Headings headings={nestedHeadings} activeId={activeId} />
       </nav>

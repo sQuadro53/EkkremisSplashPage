@@ -12,7 +12,7 @@ const Docs = () => {
       <TopBar />
       <main>
         <h2 id="initial-header">Ekkremis</h2>
-        <p>{DummyText}</p>
+        <p>Ekkremis is greek for Pending.... </p>
         <h2 id="second-header">Running the Electron App</h2>
         <p>{DummyText}</p>
         <h3 id="third-header">Development Mode</h3>
@@ -30,6 +30,9 @@ const Docs = () => {
         <p>{DummyText}</p>
         <p>{DummyText}</p>
         <h2 id="fifth-header">Prometheus Requirements</h2>
+        <p>{DummyText}</p>
+        <p>{DummyText}</p>
+        <h3 id="fifth-header">Connecting Prometheus to Ekkremis</h3>
         <p>{DummyText}</p>
         <p>{DummyText}</p>
         <h2 id="sixth-header">Features</h2>
