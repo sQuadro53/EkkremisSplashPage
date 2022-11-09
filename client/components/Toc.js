@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import Headings from './Headings';
-import '../styles/Docs.css';
-
-
+import React from "react";
+import Headings from "./Headings";
+import "../styles/Docs.css";
 
 /**
  * Dynamically generates the table of contents list, using any H2s and H3s it can find in the main text
@@ -34,7 +32,7 @@ const getNestedHeadings = (headingElements) => {
     } else if (heading.nodeName === "H3" && nestedHeadings.length > 0) {
       nestedHeadings[nestedHeadings.length - 1].items.push({
         id,
-        title
+        title,
       });
     }
   });
@@ -75,7 +73,10 @@ const useIntersectionObserver = (setActiveId) => {
       }
     };
 
-    const observer = new IntersectionObserver(callback, { root: document.querySelector("iframe"), rootMargin: "500px" });
+    const observer = new IntersectionObserver(callback, {
+      root: document.querySelector("iframe"),
+      rootMargin: "500px",
+    });
 
     const headingElements = Array.from(document.querySelectorAll("h2, h3"));
 
@@ -85,23 +86,22 @@ const useIntersectionObserver = (setActiveId) => {
   }, [setActiveId]);
 };
 
-
-
 const Toc = () => {
-    const [activeId, setActiveId] = React.useState();
-    const { nestedHeadings } = useHeadingsData();
-    useIntersectionObserver(setActiveId);
-  
-    return (
-      <nav aria-label="Table of contents">
-        <img
-            src={require("../img/periscope.png")}
-            width= "250px"
-          ></img>
-        <h1>Contents</h1>
-        <Headings headings={nestedHeadings} activeId={activeId} />
-      </nav>
-    );
-  };
+  const [activeId, setActiveId] = React.useState();
+  const { nestedHeadings } = useHeadingsData();
+  useIntersectionObserver(setActiveId);
 
-  export default Toc;
+  return (
+    <nav aria-label="Table of contents">
+      <img
+        className="toc-img"
+        src={require("../img/periscope.png")}
+        width="250px"
+      ></img>
+      <h1>Contents</h1>
+      <Headings headings={nestedHeadings} activeId={activeId} />
+    </nav>
+  );
+};
+
+export default Toc;

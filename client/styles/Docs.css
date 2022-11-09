@@ -3,28 +3,43 @@ body {
     line-height: 1.6;
     color: #D8DEE9;
   }
+
   .container {
     position: relative;
     top: 100px;
-    max-width: 1050px;
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
+    margin-bottom: 130px;
   }
-  
+
   main {
-    max-width: 700px;
-    background-color: #161822c7;
-    padding: 16px;
+    max-width: 625px;
+    padding: 60px;
     border-radius: 5px;
     margin-left: 8px;
     text-align: left;
+    border: 3px solid #e4e0d7;
+    border-radius: 10px; 
+    box-shadow: 1px -2px 30px 10px rgb(22, 22, 67) inset;
   }
-  
+
+  .code {
+    position: relative;
+    overflow: auto;
+    margin: 5px 0;
+    padding: 1rem 0 1rem 1rem;
+    border-radius: 10px;
+    background-color: black;
+    max-width: 650px;
+    min-width: 320px;
+    color: whitesmoke
+  }
+
   nav {
-    padding-top: 100px;
-    width: 330px;
-    min-width: 250px;
-    padding: 16px;
+    width: 280px;
+    min-width: 200px;
+    padding: 40px;
     margin-left: 8px;
     border-radius: 5px;
     align-self: flex-start;
@@ -33,30 +48,39 @@ body {
     height: 1000px;
     overflow: auto;
     text-align: left;
-    background-color: #1f2233c3;
+    border: 3px solid #e4e0d7;
+    border-radius: 10px; 
+    box-shadow: 1px -2px 30px 10px rgb(22, 22, 67) inset;
   }
-  
+
+  nav > h1 {
+    margin-top: -35px;
+  }
+
+  .toc-img {
+    margin-top: -35px;
+  }
+
   @media screen and (max-width: 900px) {
     nav {
       display: none;
     }
   }
-  
+
   a {
     color: #A6ACC9;
     text-decoration: none;
   }
-  
+
   li.active > a {
     color: white;
   }
-  
+
   li > a:hover {
     color: white;
   }
-  
-  /*  Gives a little bit of buffer when header is navigated to */
+
   h2, h3 {
-        padding-top: 16px;
+      padding-top: 16px;
       margin-top: -16px;
   }

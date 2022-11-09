@@ -1,30 +1,51 @@
-// importing dependencies 
-import React from 'react';
-import Button from './Button'; 
-import '../styles/Footer.css';
-import { Link } from "react-router-dom"
+// importing dependencies
+import React from "react";
+import Button from "./Button";
+import "../styles/Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-  return(
-    <div className='footer-bar'>
-
-      <Link to='/home'>
-        <img className='footer-logo-font' src={require('../img/Ekkremis-logo-dark.png')} alt="Ekkremis" height='auto' width='250px'/>
+  return (
+    <div className="footer-bar">
+      <Link to="/home">
+        <img
+          className="footer-logo-font"
+          src={require("../img/periscope.png")}
+          alt="Ekkremis"
+          height="auto"
+          width="70px"
+        />
       </Link>
 
-      <div>
-        <a href='https://github.com/oslabs-beta/Ekkremis/blob/main/lICENSE'>© 2022 Ekkremis | MIT License</a>
+      <a
+        href="https://github.com/oslabs-beta/Ekkremis/blob/main/lICENSE"
+        target="_blank"
+      >
+        © 2022 Ekkremis | MIT License
+      </a>
+
+      <div className="logo-container">
+        <a href="https://github.com/oslabs-beta/Ekkremis" target="_blank">
+          <img
+            className="footer-github-logo"
+            src={require("../img/github.png")}
+            alt="Ekkremis"
+            height="auto"
+            width="30px"
+          />
+        </a>
+
+        <a href="" target="_blank">
+          <img
+            className="footer-medium-logo"
+            src={require("../img/medium.png")}
+            alt="Ekkremis"
+            height="auto"
+            width="30px"
+          />
+        </a>
       </div>
-
-      <a href='https://github.com/oslabs-beta/Ekkremis'>
-        <img className='footer-github-logo' src={require('../img/github.png')} alt="Ekkremis" height='auto' width='50px'/>
-      </a>
-
-      <a href=''>
-        <img className='footer-medium-logo' src={require('../img/medium.png')} alt="Ekkremis" height='auto' width='50px'/>
-      </a>
-      
     </div>
-  )
-}
+  );
+};
 export default Footer;

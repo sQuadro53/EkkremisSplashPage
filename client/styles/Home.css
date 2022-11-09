@@ -1,44 +1,20 @@
-.whole{
-    display: block;
-}
 
 .intro-container{
-    margin-top: 150px;
+    margin-top: 110px;
     align-self: center;
     margin-left: auto;
     margin-right: auto;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* flex: 1; */
     max-width: 900px;
-    /* justify-content: space-around;   */
-    /* align-items: center;
-    margin: 50px; */
     border: 3px solid #e4e0d7;
     border-radius: 10px; 
     box-shadow: 1px -2px 30px 10px rgb(22, 22, 67) inset;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 40px;
-    max-width: 80%; */
     display: flex;
-    
     justify-content: space-around;
     flex-wrap: wrap;
-    /* margin-top: 150px;
-    margin-left: 200px; */
     color: #e4e0d7;
     font-family:'Josefin Sans', sans-serif;
     justify-content: center;
 }
-
-/* display: flex;
-    flex: 1;
-    margin-left: 70px;
-    margin-right: 35px;
-    max-width: 500px;
-    align-items: center; */
 
     @keyframes float {
         0% {
@@ -56,11 +32,7 @@
     }
 
 .logo{
-    display: block;
-    /* flex: 1; */
     padding: 10px;
-    /* object-fit: fill; */
-    
 }
 
 .logo > img {
@@ -75,6 +47,7 @@
     flex: 1;
     min-width: 40%;
     padding: 50px;
+    padding-bottom: 0px;
 }
 
 .highlights{
@@ -88,8 +61,13 @@
     display: inline-block;
     flex: 1;
     min-width: 40%;
-    padding: 50px;
+    padding: 10px;
 }
+
+.description {
+    max-width: 600px;
+}
+
 .features{
     display: inline-block;
     flex: 1;
@@ -102,7 +80,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 4rem;
-    /* margin-top: 0.6rem;      so as not be so close to whatever's above*/
 }
 
 .features-square{}
@@ -126,13 +103,6 @@
     text-align: left;
 }
 
-.list-heading{}
-
-.list-description{}
-
-.description{}
-
-
 .demo-container{
     align-self: center;
     margin-left: auto;
@@ -149,10 +119,3 @@
 }
 
 .Demo{}
-
-.crew-container{
-}
-
-.crew-card{}
-
-.contact{}

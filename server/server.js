@@ -1,7 +1,7 @@
-const path = require('path');
-const express = require('express');
+const path = require("path");
+const express = require("express");
 const app = express();
-const apiRouter = require(path.join(__dirname, '/routes/demoAPI'));
+const apiRouter = require(path.join(__dirname, "/routes/demoAPI"));
 
 const PORT = 3000;
 
@@ -11,10 +11,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // to statically present the build
-app.use(express.static(path.join(__dirname, '../dist/')));
+app.use(express.static(path.join(__dirname, "../dist/")));
 
 // route handler
-app.use('/demo', apiRouter);
+app.use("/demo", apiRouter);
 
 // Unknown route handler
 app.use((req, res) => res.sendStatus(404));
@@ -22,9 +22,9 @@ app.use((req, res) => res.sendStatus(404));
 // Global error handler
 app.use((err, req, res, next) => {
   const defaultErr = {
-    log: 'Express error handler caught unknown middleware error',
+    log: "Express error handler caught unknown middleware error",
     status: 400,
-    message: { err: 'An error occurred' },
+    message: { err: "An error occurred" },
   };
   const errorObj = Object.assign({}, defaultErr, err);
   console.log(errorObj.log);
