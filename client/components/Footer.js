@@ -28,7 +28,7 @@ const Footer = () => {
         <a href="https://github.com/oslabs-beta/Ekkremis" target="_blank">
           <img
             className="footer-github-logo"
-            src={require("../img/github.png")}
+            src={require("../img/github_white.jpeg")}
             alt="Ekkremis"
             height="auto"
             width="30px"
@@ -38,7 +38,7 @@ const Footer = () => {
         <a href="" target="_blank">
           <img
             className="footer-medium-logo"
-            src={require("../img/medium.png")}
+            src={require("../img/medium_white.png")}
             alt="Ekkremis"
             height="auto"
             width="30px"
