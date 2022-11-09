@@ -6,8 +6,9 @@
     padding: 10px 15px;
     margin: 15px 15px 50px;
     font-size: 16px;
-    color: #ffffff;
+    color: #e3dcd2;
     font-weight: thin;
+    font-family:'Josefin Sans', sans-serif;
   }
   
   .FPbutton:hover{

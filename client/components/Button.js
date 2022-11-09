@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/button.css';
 
-// interface Props {
+// interface Props {        FREEEEEEEEEEEEEEEEEEE
 //   className: string;
 //   children?: React.ReactNode;
 //   onClick?: () => void; //might want to remove the '?' if the button will have functionality

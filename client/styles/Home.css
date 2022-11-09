@@ -1,20 +1,33 @@
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 .intro-container{
     /* display: flex; */
     /* flex-direction: row; */
-    /* flex: 1;
-    max-width: 800px; */
+    /* flex: 1; */
+    max-width: 900px;
     /* justify-content: space-around;   */
     /* align-items: center;
     margin: 50px; */
-    border: 3px solid #ffffff; 
-    display: grid;
+    border: 3px solid #e4e0d7;
+    border-radius: 10px; 
+    box-shadow: 1px -2px 30px 10px rgb(22, 22, 67) inset;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     row-gap: 40px;
-    max-width: 80%;
-    margin-top: 150px;
-    margin-left: 200px;
-    color: white;
+    max-width: 80%; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* margin-top: 150px;
+    margin-left: 200px; */
+    color: #e4e0d7;
+    font-family:'Josefin Sans', sans-serif;
+    justify-content: center;
 }
 
 /* display: flex;
@@ -24,16 +37,34 @@
     max-width: 500px;
     align-items: center; */
 
+    @keyframes float {
+        0% {
+            /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); grabs the whole div and not the image - makes the background gradient look weird*/
+            transform: translatey(0px);
+        }
+        50% {
+            /* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2); */
+            transform: translatey(40px);
+        }
+        100% {
+            /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+            transform: translatey(0px);
+        }
+    }
+
 .logo{
-    display: inline-block;
-    flex: 1;
+    display: block;
+    /* flex: 1; */
     padding: 10px;
-    object-fit: fill;
+    /* object-fit: fill; */
+    
 }
 
 .logo > img {
     width: 400px;
-    height: auto; 
+    height: auto;
+    transform: translatey(0px);
+    animation: float 3s ease-in-out infinite;
 } 
 
 .header-logo{
@@ -63,6 +94,35 @@
     padding: 50px;
 }
 
+.features-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 4rem;
+    /* margin-top: 0.6rem;      so as not be so close to whatever's above*/
+}
+
+.features-square{}
+
+.features-icon{
+    display: flex;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, #EC6536 0%, #f7bd58df 50%, rgb(218, 131, 18)100%);
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.features-header3{
+    text-align: left;
+}
+
+.features-paragraph{
+    text-align: left;
+}
+
 .list-heading{}
 
 .list-description{}
@@ -71,17 +131,21 @@
 
 
 .demo-container{
-    border: 3px solid #ffffff;
-    max-width: 80%;
+    border: 3px solid #e4e0d7;
+    border-radius: 10px;
+    box-shadow: 1px -2px 30px 10px rgb(22, 22, 67) inset;
+    max-width: 900px;
     margin-top: 75px;
     margin-left: 200px;
     padding: 20px;
-    color: white;
+    color: #e4e0d7;
+    font-family:'Josefin Sans', sans-serif;
 }
 
 .Demo{}
 
-.crew-container{}
+.crew-container{
+}
 
 .crew-card{}
 
