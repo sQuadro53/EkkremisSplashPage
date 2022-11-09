@@ -1,11 +1,6 @@
 import React from 'react';
+import '../styles/Docs.css';
 
-
-
-/**
- * This renders an item in the table of contents list.
- * scrollIntoView is used to ensure that when a user clicks on an item, it will smoothly scroll.
- */
  const Headings = ({ headings, activeId }) => (
     <ul>
       {headings.map((heading) => (

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Headings from './Headings';
+import '../styles/Docs.css';
 
 
 
@@ -93,7 +94,7 @@ const Toc = () => {
   
     return (
       <nav aria-label="Table of contents">
-        <h1>Toc</h1>
+        <h1>Contents</h1>
         <Headings headings={nestedHeadings} activeId={activeId} />
       </nav>
     );

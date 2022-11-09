@@ -1,36 +1,37 @@
 body {
     font-family: sans-serif;
     line-height: 1.6;
-    background-color: #1F2233;
     color: #D8DEE9;
   }
   .container {
+    position: relative;
+    top: 100px;
     max-width: 1050px;
     margin: 0 auto;
     display: flex;
   }
   
   main {
-    margin-top: 200px;
     max-width: 800px;
     background-color: #161822;
     padding: 16px;
-    border-radius: 8px;
+    border-radius: 5px;
     margin-left: 8px;
   }
   
   nav {
-    
+    padding-top: 150px;
     width: 220px;
     min-width: 220px;
     padding: 16px;
-    margin: 8px;
+    margin-left: 8px;
+    border-radius: 5px;
     align-self: flex-start;
-    position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 48px;
-    max-height: calc(100vh - 70px);
+    top: 50px;
+    height: 1000px;
     overflow: auto;
+    background-color: #1F2233;
   }
   
   @media screen and (max-width: 900px) {
