@@ -1,34 +1,34 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
 
 module.exports = {
-  entry: './client/index.js', 
+  entry: "./client/index.js",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
-    filename: 'bundle.js',
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/",
+    filename: "bundle.js",
   },
-  mode: 'development',
+  mode: "development",
   module: {
     rules: [
       {
         test: /.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
         },
       },
       {
         test: /.(css|scss)$/,
         exclude: /node_modules/,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
               esModule: false,
             },
@@ -39,31 +39,30 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './client/index.html',
+      template: "index.html",
     }),
   ],
-   devServer: {
+  devServer: {
     static: {
       // match the output path
-      directory: path.resolve(__dirname, 'dist'),
+      directory: path.resolve(__dirname, "dist"),
       //match the output 'publicPath'
-      publicPath: '/'
+      publicPath: "/",
     },
-
-    headers: { 'Access-Control-Allow-Origin': '*' },
+    headers: { "Access-Control-Allow-Origin": "*" },
     // proxy is required in order to make api calls to express server while using hot-reload webpack server
-    // routes api fetch requests from localhost:8080/api/* (webpack dev server) to localhost:3000/api/* (where our Express server is running)
+    // routes api fetch requests from localhost:8080/demo/*(webpack dev server) to localhost:3000/api/* (where our Express server is running)
     proxy: {
-      '/demo': {
-        target: 'http://localhost:3000/',
+      "/demo/*": {
+        target: "http://localhost:3000/",
         secure: false,
       },
     },
     // Required for Docker to work with dev server
-    host: '0.0.0.0',
+    host: "0.0.0.0",
     compress: true,
     port: 8080,
-    hot: true
+    hot: true,
   },
-  devtool: 'eval-source-map',
+  devtool: "eval-source-map",
 };
