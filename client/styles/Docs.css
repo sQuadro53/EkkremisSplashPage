@@ -28,13 +28,14 @@ body {
     position: relative;
     overflow: auto;
     margin: 5px 0;
-    padding: 1rem 0 1rem 1rem;
+    padding: .5rem 0 .5rem 1rem;
     border-radius: 10px;
-    background-color: black;
+    background-color: rgb(221, 221, 221);
     max-width: 650px;
-    min-width: 320px;
-    color: whitesmoke
+    min-width: 450px;
+    color: black;
   }
+
 
   nav {
     width: 280px;

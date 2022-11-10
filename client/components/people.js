@@ -9,6 +9,7 @@ const People = () => {
         <div className="crew-card">
           <img
             src={require("../img/rilo.png")}
+            alt="Rilo"
             width="120"
             height="120"
             viewbox="0 0 16 16"
@@ -21,6 +22,7 @@ const People = () => {
             <a href="https://github.com/WaffleCloud" target="_blank">
               <img
                 src={require("../img/github.png")}
+                alt="github-logo"
                 width="30"
                 height="30"
                 viewbox="0 0 16 16"
@@ -29,6 +31,7 @@ const People = () => {
             <a href="https://www.linkedin.com/in/taywade" target="_blank">
               <img
                 src={require("../img/linkedin.png")}
+                alt="linkedin-logo"
                 width="30"
                 height="30"
                 viewbox="0 0 16 16"
@@ -39,6 +42,7 @@ const People = () => {
         <div className="crew-card">
           <img
             src={require("../img/forest.png")}
+            alt="Forest"
             width="120"
             height="120"
             // viewbox="0 0 16 16"
@@ -51,6 +55,7 @@ const People = () => {
             <a href="https://github.com/forestleigh" target="_blank">
               <img
                 src={require("../img/github.png")}
+                alt="github-logo"
                 width="30"
                 height="30"
                 // viewbox="0 0 16 16"
@@ -59,6 +64,7 @@ const People = () => {
             <a href="https://www.linkedin.com/in/forestleigh/" target="_blank">
               <img
                 src={require("../img/linkedin.png")}
+                alt="linkedin-logo"
                 width="30"
                 height="30"
                 viewbox="0 0 16 16"
@@ -69,6 +75,7 @@ const People = () => {
         <div className="crew-card">
           <img
             src={require("../img/Cesar-s.jpeg")}
+            alt="Cesar"
             width="120"
             height="120"
             viewbox="0 0 16 16"
@@ -81,6 +88,7 @@ const People = () => {
             <a href="https://github.com/Cesar-Quintanilla" target="_blank">
               <img
                 src={require("../img/github.png")}
+                alt="github-logo"
                 width="30"
                 height="30"
                 viewbox="0 0 16 16"
@@ -89,6 +97,7 @@ const People = () => {
             <a href="https://www.linkedin.com/in/quintanilla-cesar" target="_blank">
               <img
                 src={require("../img/linkedin.png")}
+                alt="linkedin-logo"
                 width="30"
                 height="30"
                 viewbox="0 0 16 16"
@@ -99,6 +108,7 @@ const People = () => {
         <div className="crew-card">
           <img
             src={require("../img/z.jpg")}
+            alt="Z"
             width="120"
             height="120"
             viewbox="0 0 16 16"
@@ -114,6 +124,7 @@ const People = () => {
             >
               <img
                 src={require("../img/github.png")}
+                alt="github-logo"
                 width="30"
                 height="30"
                 viewbox="0 0 16 16"
@@ -122,6 +133,7 @@ const People = () => {
             <a href="https://www.linkedin.com/in/lizihao/" target="_blank">
               <img
                 src={require("../img/linkedin.png")}
+                alt="linkedin-logo"
                 width="30"
                 height="30"
                 viewbox="0 0 16 16"
@@ -132,6 +144,7 @@ const People = () => {
         <div className="crew-card">
           <img
             src={require("../img/matt.jpeg")}
+            alt="Matt"
             width="120"
             height="120"
             viewbox="0 0 16 16"
@@ -147,6 +160,7 @@ const People = () => {
             >
               <img
                 src={require("../img/github.png")}
+                alt="github-logo"
                 width="30"
                 height="30"
                 viewbox="0 0 16 16"
@@ -155,6 +169,7 @@ const People = () => {
             <a href="https://www.linkedin.com/in/matthewpan/" target="_blank">
               <img
                 src={require("../img/linkedin.png")}
+                alt="linkedin-logo"
                 width="30"
                 height="30"
                 viewbox="0 0 16 16"
