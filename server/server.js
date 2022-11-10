@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // to statically present the build
-app.use(express.static(path.join(__dirname, "../dist/")));
+app.use(express.static(path.join(__dirname, "../build/")));
 
 // route handler
 app.use("/demo", apiRouter);

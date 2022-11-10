@@ -5,7 +5,7 @@ const webpack = require("webpack");
 module.exports = {
   entry: "./client/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build"),
     publicPath: "/",
     filename: "bundle.js",
   },
@@ -45,7 +45,7 @@ module.exports = {
   devServer: {
     static: {
       // match the output path
-      directory: path.resolve(__dirname, "dist"),
+      directory: path.resolve(__dirname, "build"),
       //match the output 'publicPath'
       publicPath: "/",
     },

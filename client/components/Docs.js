@@ -138,23 +138,31 @@ const Docs = () => {
           <p>11. Clone the following git repository:</p>
           <CodeCopy copyText={"https://github.com/kubernetes/kube-state-metrics.git"} />
           <p>12. Enter the freshly cloned repository.</p>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          <p>13. Create the kube metrics server.</p>
+          <CodeCopy copyText={"kubectl apply -f examples/standard"} />
+          <p>14. Run the get all pods command to check if state metrics is now available in the kube-system namespace.</p>
+          <CodeCopy copyText={"kubectl get po -A"} />
+          <p>15. Expose the metrics endpoint so you can view it in browser to check if it is working properly.</p>
+          <CodeCopy copyText={"kubectl proxy"} />
+          <p>16. Metrics should be available in this url: `http://localhost:8001/api/v1/namespaces/kube-system/services/kube-state-metrics:http-metrics/proxy/metrics`</p>
+          <p>17. Once satisfied, exit out of this proxy with <code>^C</code></p>
+          <p>18. Next we will start Prometheus. We'll create a namespace for it below:</p>
+          <CodeCopy copyText={"kubectl create namespace monitoring"} />
+          <p>19. Navigate to the cloned 'Ekkremis-Setup-Files' directory and distinguish the cluster role with a config file. The <a href="https://kubernetes.io/docs/reference/access-authn-authz/rbac/">cluster role</a> contains rules for permissions. This has to be set within a particular namespace, the "kind" value must match the new namespace.</p>
+          <CodeCopy copyText={"kubectl create -f clusterRole.yml"} />
+          <p>20. Prepare for the Prometheus deployment using the <a href="https://kubernetes.io/docs/concepts/configuration/configmap/">config-map</a>:</p>
+          <CodeCopy copyText={"kubectl create -f config-map.yml"} />
+          <p>21. Deploy Prometheus:</p>
+          <CodeCopy copyText={"kubectl create  -f prometheus-deployment.yml"} />
+          <p>22. Confirm the deployment by looking at all pods:</p>
+          <CodeCopy copyText={"kubectl get po -A"} />
+          <p>23. Prometheus scrapes all data from the kube metrics server. You can learn more <a href="http://localhost:8001/api/v1/namespaces/kube-system/services/kube-state-metrics:http-metrics/proxy/metrics">here</a>.</p>
+          <p>24. Next we can get access to prometheus in the browser. Get the name of our prometheus deployment:</p>
+          <CodeCopy copyText={"kubectl get deployments --namespace=monitoring"} />
+          <p>25. Execute the following command with our pod name to access prometheus from localhost port 9090:</p>
+          <CodeCopy copyText={"kubectl port-forward <name-of-deployment> 9090:9090 -n monitoring"} />
+          <p>26. Metrics should be available in this url: `http://localhost:9090`</p>
+          <p>27. Open Ekkrems and provide this endpoint in the top navbar to learn more about your live deployed mock pods!</p>
           
           <h2 id="sixth-header">Features</h2>
           <li>Realtime pod metric, with the option to sort by pod lifecycle status</li>
