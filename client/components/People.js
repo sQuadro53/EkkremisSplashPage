@@ -13,6 +13,7 @@ const People = () => {
             width="120"
             height="120"
             viewbox="0 0 16 16"
+            className="headshot"
           ></img>
           <div className="crew-member">
             <h4>Rilo Wade</h4>
@@ -45,6 +46,7 @@ const People = () => {
             alt="Forest"
             width="120"
             height="120"
+            className="headshot"
             // viewbox="0 0 16 16"
           ></img>
           <div className="crew-member">
@@ -79,6 +81,7 @@ const People = () => {
             width="120"
             height="120"
             viewbox="0 0 16 16"
+            className="headshot"
           ></img>
           <div className="crew-member">
             <h4>Cesar Quintanilla</h4>
@@ -112,6 +115,7 @@ const People = () => {
             width="120"
             height="120"
             viewbox="0 0 16 16"
+            className="headshot"
           ></img>
           <div className="crew-member">
             <h4>Zihao Li</h4>
@@ -148,6 +152,7 @@ const People = () => {
             width="120"
             height="120"
             viewbox="0 0 16 16"
+            className="headshot"
           ></img>
           <div className="crew-member">
             <h4>Matt Pan</h4>

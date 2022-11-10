@@ -34,6 +34,7 @@ body {
     max-width: 650px;
     min-width: 450px;
     color: black;
+    font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
   }
 
 
