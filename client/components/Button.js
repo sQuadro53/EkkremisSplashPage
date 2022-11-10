@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Button.css";
 
+// component for all orange buttons
 const Button = ({ className, children, onClick }) => {
   return (
     <div>

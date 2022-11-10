@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import '../styles/Docs.css';
 
+// this is a component for the code copy boxes in the docs 
+
 function CodeCopy({ copyText }) {
   const [isCopied, setIsCopied] = useState(false);
 
