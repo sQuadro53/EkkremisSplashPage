@@ -16,10 +16,7 @@ const Docs = () => {
         <main>
           <h2 id="initial-header">Ekkremis</h2>
           <p>
-            Ekkremis (εκκρεμής) is greek for Pending. While pending pods are
-            enevitable, there's no reason to keep the around or forget about
-            them. Push updates to your cluster worry free with Ekkremis alerts
-            and lifecycle optomization dashboard.{" "}
+          Ekkremis (εκκρεμής) is greek for Pending. Induction of pending pods is inevitable and identifying the issues to get those pods running is challenging. Push updates to your cluster worry-free with Ekkremis alerts and lifecycle optimization dashboard.
           </p>
 
           <h2 id="second-header">Running the App</h2>
@@ -28,7 +25,7 @@ const Docs = () => {
           <ul>The port-forward for Prometheus: `localhost:9090`</ul>
 
           <h3 id="third-header">Development Mode (Web)</h3>
-          <p>Ekkremis can be run from the web as well as Electron.</p>
+          <p>Ekkremis can be run from the web as well as from Electron.</p>
           <p>To get started on the web, follow these steps:</p>
           <CodeCopy copyText={"npm install; npm run build"} />
           <p>The build step will add to your 'dist' folder.</p>
@@ -43,49 +40,49 @@ const Docs = () => {
           </p>
           <p>To get started, follow these steps:</p>
           <CodeCopy copyText={"npm install; npm postinstall"} />
-          <p>The post install step is for Electron-specific dependencies.</p>
+          <p>The post-install step is for Electron-specific dependencies.</p>
           <p>The build step will add to your 'electron' folder and .</p>
           <p>Next, start Ekkremis:</p>
           <CodeCopy copyText={"npm run electron:dev"} />
 
           <h3 id="third-header">Production Mode (Electron Only)</h3>
           <p>
-            The command below will build and bundle files into /dist folder for
-            production and open the electron app based on the bundled files.
+            The command below will build and bundle files into the 'dist' folder for
+            production. The electron app will be rendered based on the bundled files.
           </p>
           <CodeCopy copyText={"npm run electron:build"} />
 
           <h2 id="third-header">Using Ekkremis Lifecycle Dashboard</h2>
           <li>
-            On a successful startup, you will be greeted with a landing page
-            with the option to continue to dashboard.
+            1. On a successful startup, you will be greeted with a landing page
+            and the option to continue to the dashboard.
           </li>
           <li>
-            The Dashboard is where you will find a summary of your pods,
+            2. The Dashboard is where you will find a summary of your pods,
             displayed metrics, and the option to investigate possible errors.
           </li>
           <li>
-            Once in the dashboard Ekkremis will intrinsically check the
-            prometheus enpoint 'localhost:9090', please edit this endpoint if
+            3. Once in the dashboard, Ekkremis will intrinsically check the
+            Prometheus endpoint 'localhost:9090', please edit this endpoint if
             needed in the top navigation bar.
           </li>
           <li>
-            A querybar on the left will transport you through views of oyur pods
-            in verious lifecycle statuses.
+            4. A query bar on the left will transport you through views of your pods
+            in various lifecycle statuses.
           </li>
           <li>
-            You can view charts and error messages for individual pods by
-            selecting the 'charts' and 'logs' button on each pods display.
+            5. You can view error messages for individual pods by
+            selecting the 'logs' button on each pod's display.
           </li>
           <li>
-            You can view charts and metrics for groups of pods in the chart
+            6. You can view charts and metrics for groups of pods in the chart
             display at the top of the dashboard.
           </li>
 
           <h2 id="fourth-header">Kubernetes Requirements</h2>
           <p>
             Ekkremis can observe Kubernetes clusters that are locally hosted
-            with MiniKube or hosted on the cloud so long as prometheus has been
+            with MiniKube or hosted on the cloud so long as Prometheus has been
             set up to monitor them.
           </p>
           <p>
@@ -105,13 +102,60 @@ const Docs = () => {
           </p>
 
           <h2 id="fifth-header">Prometheus Requirements</h2>
-          <p>Ekkremis requires a Prometheus enpoint to display your data. Once you have Prometheus installed into your Kubernetes cluster, follow the steps below to connect your setup to Ekkremis.</p>
+          <p>Ekkremis requires a Prometheus endpoint to display your data. Once you have Prometheus installed into your Kubernetes cluster, follow the steps below to connect your setup to Ekkremis.</p>
           <CodeCopy copyText={"kubectl port-forward service/[PROMETHEUS] 9090"} />
 
           <h3 id="fifth-header">Connecting Prometheus to Ekkremis</h3>
-          <p>With sucessful port forwarding, you are ready to begin with Ekkremis.</p>
+          <p>With successful port forwarding, you are ready to begin with Ekkremis.</p>
           <p>Simply load the app and enter the Prometheus metrics endpoint into the top navigation bar.</p>
 
+          <h2 id="eighth-header">Runnign the Demo</h2>
+          <p>We have two ways of serving up mock data to get you accustomed to Ekkremis. These demos include several induced error cases as well as healthy deployments. </p>
+
+          <h3 id="fifth-header">Prepared mock data through endpoint</h3>
+          <p>This option is the fastest and doesn't require Prometheus or Kubernetes to be setup as a prerequisite. </p>
+          <p>1. Copy the following demo endpoint and paste it in the top navbar of Ekkremis. </p>
+          <p>2. Explore the mock data presentations on your own, or reference the instructions for 'Using Ekkremis Lifecycle Dashboard' posted above. </p>
+
+          <h3 id="fifth-header">Deploy mock data pods with MiniKube</h3>
+          <p>Prereqisites: installation of Docker, minikube, and and the kubectl command line tool. </p>
+          <p>1. Start the Docker desktop app (you don't need to be signed in). </p>
+          <p>2. Start your minicube cluster with the command below: </p>
+          <CodeCopy copyText={"minicube start"} />
+          <p>3. Minikube has its own pods and you can check them out with the following command to view all running pods: </p>
+          <CodeCopy copyText={"kubectl get po -A"} />
+          <p>4. Clone the following repo of mock yaml files make for Ekkremis: </p>
+          <CodeCopy copyText={"https://github.com/sQuadro53/Ekkremis-Setup-Files.git"} />
+          <p>5. Enter the cloned repo: </p>
+          <CodeCopy copyText={"cd Ekkremis-Setup-Files"} />
+          <p>6. Explore the mock data files present arranged by error case and pick the ones relevant to you.</p>
+          <p>7. We will deploy as a positive control, a working version of the popular app Cow Clicker.</p>
+          <CodeCopy copyText={"kubectl apply -f cowclicker_working.yml"} />
+          <p>8. Now we'll deploy a version of the app that has an incorrect Docker image file resulting in a pending error.</p>
+          <CodeCopy copyText={"kubectl apply -f cowclicker_not_working.yml"} />
+          <p>9. Optional: deploy additional mock error cases from the files in this folder.</p>
+          <p>10. Next we will set up kube-state-metrics, a project under the Kubernetes organization, generates Prometheus format metrics based on the current state of the Kubernetes native resources.</p>
+          <p>11. Clone the following git repository:</p>
+          <CodeCopy copyText={"https://github.com/kubernetes/kube-state-metrics.git"} />
+          <p>12. Enter the freshly cloned repository.</p>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
           <h2 id="sixth-header">Features</h2>
           <li>Realtime pod metric, with the option to sort by pod lifecycle status</li>
           <li>Optomizing Kubernetes served locally or on the cloud</li>
@@ -121,10 +165,10 @@ const Docs = () => {
           <li>Abstract away PromQL queries with preconfigured views</li>
 
           <h2 id="seventh-header">Upcoming Features</h2>
-          <li>Expansion of error logs accesible using Kubectl the Kubernetes command line interface</li>
+          <li>Expansion of error logs accessible using Kubectl the Kubernetes command line interface</li>
           <li>Customized solutions for pods stuck in the unknown state</li>
-          <li>User accounts for the storage long-term storage of pod history </li>
-
+          <li>User accounts for the storage long-term storage of pod history</li>
+          
           <h2 id="eighth-header">Technologies</h2>
           <p>Ekkremis was build with:</p>
           <li>Electron</li>
