@@ -16,7 +16,7 @@ const Docs = () => {
         <main>
           <h2 id="initial-header">Ekkremis</h2>
           <p>
-          Ekkremis (εκκρεμής) is greek for Pending. Induction of pending pods is inevitable and identifying the issues to get those pods running is challenging. Push updates to your cluster worry-free with Ekkremis alerts and lifecycle optimization dashboard.
+          Ekkremis (εκκρεμής) is Greek for Pending. Induction of pending pods is inevitable and identifying the issues to get those pods running is challenging. Push updates to your cluster worry-free with Ekkremis alerts and lifecycle optimization dashboard.
           </p>
 
           <h2 id="second-header">Running the App</h2>
@@ -48,7 +48,7 @@ const Docs = () => {
           <h3 id="third-header">Production Mode (Electron Only)</h3>
           <p>
             The command below will build and bundle files into the 'dist' folder for
-            production. The electron app will be rendered based on the bundled files.
+            production. The Electron app will be rendered based on the bundled files.
           </p>
           <CodeCopy copyText={"npm run electron:build"} />
 
@@ -109,7 +109,7 @@ const Docs = () => {
           <p>With successful port forwarding, you are ready to begin with Ekkremis.</p>
           <p>Simply load the app and enter the Prometheus metrics endpoint into the top navigation bar.</p>
 
-          <h2 id="eighth-header">Runnign the Demo</h2>
+          <h2 id="eighth-header">Running the Demo</h2>
           <p>We have two ways of serving up mock data to get you accustomed to Ekkremis. These demos include several induced error cases as well as healthy deployments. </p>
 
           <h3 id="fifth-header">Prepared mock data through endpoint</h3>
@@ -121,12 +121,12 @@ const Docs = () => {
           <p>Prereqisites: installation of Docker, minikube, and and the kubectl command line tool. </p>
           <p>1. Start the Docker desktop app (you don't need to be signed in). </p>
           <p>2. Start your minicube cluster with the command below: </p>
-          <CodeCopy copyText={"minicube start"} />
+          <CodeCopy copyText={"minikube start"} />
           <p>3. Minikube has its own pods and you can check them out with the following command to view all running pods: </p>
           <CodeCopy copyText={"kubectl get po -A"} />
           <p>4. Clone the following repo of mock yaml files make for Ekkremis: </p>
           <CodeCopy copyText={"https://github.com/sQuadro53/Ekkremis-Setup-Files.git"} />
-          <p>5. Enter the cloned repo: </p>
+          <p>5. Change directory to the cloned repo: </p>
           <CodeCopy copyText={"cd Ekkremis-Setup-Files"} />
           <p>6. Explore the mock data files present arranged by error case and pick the ones relevant to you.</p>
           <p>7. We will deploy as a positive control, a working version of the popular app Cow Clicker.</p>
@@ -168,7 +168,7 @@ const Docs = () => {
           <li>Realtime pod metric, with the option to sort by pod lifecycle status</li>
           <li>Optomizing Kubernetes served locally or on the cloud</li>
           <li>Filter by pod status, so you never forget about pending pods again</li>
-          <li>customizable monitoring and alerts for unhealthy pods</li>
+          <li>Customizable monitoring and alerts for unhealthy pods</li>
           <li>Displays error logs and provides solutions</li>
           <li>Abstract away PromQL queries with preconfigured views</li>
 

@@ -96,6 +96,7 @@ const Toc = () => {
       <img
         className="toc-img"
         src={require("../img/periscope.png")}
+        alt="periscope"
         width="250px"
       ></img>
       <h1>Contents</h1>

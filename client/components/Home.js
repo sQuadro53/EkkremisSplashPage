@@ -22,11 +22,12 @@ const Home = () => {
 
         <div className="highlights">
           <h1>Introducing Ekkremis</h1>
-          <h2>A periscopic view into Kubernetes pod lifecycles</h2>
+          <h2>A periscopic view into Kubernetes pods</h2>
           <div className="highlights-container">
             <div className="highlight-box">
               <img
                 src={require("../img/seahorse.png")}
+                alt="seahorse"
                 width="60"
                 height="60"
                 viewbox="0 0 16 16"
@@ -44,6 +45,7 @@ const Home = () => {
             <div className="highlight-box">
               <img
                 src={require("../img/starfish.png")}
+                alt="starfish"
                 width="60"
                 height="60"
                 viewbox="0 0 16 16"
@@ -60,6 +62,7 @@ const Home = () => {
             <div className="highlight-box">
               <img
                 src={require("../img/turtle.png")}
+                alt="turtle"
                 width="60"
                 height="60"
                 viewbox="0 0 16 16"
@@ -81,15 +84,15 @@ const Home = () => {
             Pods in Kubernetes have a lifecycle composed of several phases shown
             in the diagram below. While most pods quickly progress from Pending
             to Running, some pods can get stuck in Pending. Troubleshooting
-            pending pods and understanding the changes needed to solve the issue
+            Pending pods and understanding the changes needed to solve the issue
             can be time-consuming and require many manual queries. Ekkremis is
             here to help!
           </p>
           <img
-            src="../img/pod_lifecycle.png"
+            src={require("../img/pod_lifecycle.png")}
             alt="diagram of the kubernetes pod lifcycle"
             height="auto"
-            width="300px"
+            width="100%"
           ></img>
         </div>
 
