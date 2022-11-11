@@ -35,7 +35,7 @@ const Footer = () => {
           />
         </a>
 
-        <a href="" target="_blank">
+        <a href="https://medium.com/@ekkremiskubernetes/ekkremis-a-periscopic-view-into-kubernetes-pending-pods-37344cf90da0" target="_blank">
           <img
             className="footer-medium-logo"
             src={require("../img/medium_white.png")}
