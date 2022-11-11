@@ -28,7 +28,7 @@ const TopBar = () => {
           <Button className="FPbutton" children="Github" />
         </a>
 
-        <a href="https://www.google.com/" target="_blank">
+        <a href="https://medium.com/@ekkremiskubernetes/ekkremis-a-periscopic-view-into-kubernetes-pending-pods-37344cf90da0" target="_blank">
           <Button className="FPbutton" children="Blog" />
         </a>
       </div>

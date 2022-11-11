@@ -27,6 +27,9 @@ const Docs = () => {
           <h3 id="third-header">Development Mode (Web)</h3>
           <p>Ekkremis can be run from the web as well as from Electron.</p>
           <p>To get started on the web, follow these steps:</p>
+          <p>Clone the Ekkremis repository:</p>
+          <CodeCopy copyText={"https://github.com/oslabs-beta/Ekkremis"} />
+          <p>In the terminal in the cloned repository run the following commands:</p>
           <CodeCopy copyText={"npm install; npm run build"} />
           <p>The build step will add to your 'dist' folder.</p>
           <p>Next, start Ekkremis:</p>
@@ -39,6 +42,10 @@ const Docs = () => {
             the app.
           </p>
           <p>To get started, follow these steps:</p>
+          <p>To get started on the web, follow these steps:</p>
+          <p>Clone the Ekkremis repository:</p>
+          <CodeCopy copyText={"https://github.com/oslabs-beta/Ekkremis"} />
+          <p>In the terminal in the cloned repository run the following commands:</p>
           <CodeCopy copyText={"npm install; npm postinstall"} />
           <p>The post-install step is for Electron-specific dependencies.</p>
           <p>The build step will add to your 'electron' folder and .</p>
@@ -179,15 +186,44 @@ const Docs = () => {
           
           <h2 id="eighth-header">Technologies</h2>
           <p>Ekkremis was build with:</p>
-          <li>Electron</li>
-          <li>Typescript</li>
-          <li>React</li>
-          <li>React Router</li>
-          <li>Jest</li>
-          <li>Node</li>
-          <li>Prometheus</li>
-          <li>Chart.js</li>
-          <li>Webpack</li>
+          <div class='tech-stack'> 
+          <li>
+            <p>Electron</p>
+            <img class='tech-stack-icons' src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/1200px-Electron_Software_Framework_Logo.svg.png' alt=''/>
+          </li>
+          <li>
+            <p>TypeScript</p>
+            <img class='tech-stack-icons' src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png' alt=''/>
+          </li>
+          <li>
+            <p>React</p>
+            <img class='tech-stack-icons' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png' alt=''/>
+          </li>
+          <li>
+            <p>React Router</p>
+            <img class='tech-stack-icons' src='https://cdn.freebiesupply.com/logos/large/2x/react-router-logo-png-transparent.png' alt=''/>
+          </li>
+          <li>
+            <p>Jest</p>
+            <img class='tech-stack-icons' src='https://www.pngfind.com/pngs/m/92-927312_jest-testing-hd-png-download.png' alt=''/>
+          </li>
+          <li>
+            <p>Node js</p>
+            <img class='tech-stack-icons' src='https://img.favpng.com/16/11/19/node-js-javascript-web-application-express-js-computer-software-png-favpng-cYmJvJyBDcTNbLdSRdNAceLyW.jpg' alt=''/>
+          </li>
+          <li>
+            <p>Prometheus</p>
+            <img class='tech-stack-icons' src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prometheus_software_logo.svg/2066px-Prometheus_software_logo.svg.png' alt=''/>
+          </li>
+          <li>
+            <p>Chart js</p>
+            <img class='tech-stack-icons' src='https://avatars.githubusercontent.com/u/10342521?s=280&v=4' alt=''/>
+          </li>
+          <li>
+            <p>Webpack</p>
+            <img class='tech-stack-icons' src='https://seeklogo.com/images/W/webpack-logo-9E66EE203A-seeklogo.com.png' alt=''/>
+          </li>
+          </div>
         </main>
         <Toc />
       </div>
