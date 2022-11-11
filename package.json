@@ -1,6 +1,6 @@
 {
-  "name": "Ekkremis",
-  "homepage": "https://squadro53.github.io/EkkremisSplashPage/",
+  "name": "ekkremis",
+  "homepage": "https://squadro53.github.io/EkkremisSplashPage",
   "version": "1.0.0",
   "description": "Welcome page for the Ekkremis Kubernetes pending pod troubleshooting tool",
   "main": "index.js",
@@ -9,8 +9,8 @@
     "start": "node ./server/server.js",
     "dev:hot": "NODE_ENV=development nodemon ./server/server.js & webpack-dev-server --open --hot",
     "docker-dev:hot": "docker-compose -f docker-compose-dev-hot.yml up",
-    "predeploy": "npm run build", 
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -18,11 +18,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sQuadro53/EkkremisSplashPage/issues"
   },
-  "homepage": "https://github.com/sQuadro53/EkkremisSplashPage#readme",
   "dependencies": {
     "express": "^4.18.2",
     "file-loader": "^6.2.0",

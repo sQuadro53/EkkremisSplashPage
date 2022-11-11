@@ -11,13 +11,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // to statically present the build
-app.use(express.static(path.join(__dirname, "../dist/")));
+app.use(express.static(path.join(__dirname, "../build/")));
 
 // route handler
-app.use("/demo", apiRouter);
+app.use("/metrics", apiRouter);
 
 // Unknown route handler
-app.use((req, res) => res.sendStatus(404));
+app.use((req, res) => express.static(path.join(__dirname, "../client/components/NotFound.js")));
 
 // Global error handler
 app.use((err, req, res, next) => {

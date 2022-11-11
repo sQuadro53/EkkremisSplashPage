@@ -27,14 +27,20 @@ body {
   .code {
     position: relative;
     overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
     margin: 5px 0;
-    padding: 1rem 0 1rem 1rem;
-    border-radius: 10px;
-    background-color: black;
-    max-width: 650px;
-    min-width: 320px;
-    color: whitesmoke
+    padding: .5rem 0 .5rem 1rem;
+    border-radius: 5px;
+    background-color: rgb(184, 184, 184);
+    max-width: 625px;
+    min-width: 350px;
+    color: black;
+    overflow-x: scroll;
+    overflow-y: visible;
+    font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
   }
+
 
   nav {
     width: 280px;
@@ -64,6 +70,15 @@ body {
   @media screen and (max-width: 900px) {
     nav {
       display: none;
+     }
+    main {
+      max-width: 325px;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    .code {
+      width: 570px;
     }
   }
 
@@ -83,4 +98,15 @@ body {
   h2, h3 {
       padding-top: 16px;
       margin-top: -16px;
+  }
+
+  .tech-stack li {
+    display: flex;
+  }
+
+  .tech-stack-icons {
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+    margin-top: 12px;
   }

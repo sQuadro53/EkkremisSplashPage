@@ -5,7 +5,7 @@ const webpack = require("webpack");
 module.exports = {
   entry: "./client/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build"),
     publicPath: "/",
     filename: "bundle.js",
   },
@@ -45,15 +45,15 @@ module.exports = {
   devServer: {
     static: {
       // match the output path
-      directory: path.resolve(__dirname, "dist"),
+      directory: path.resolve(__dirname, "build"),
       //match the output 'publicPath'
       publicPath: "/",
     },
     headers: { "Access-Control-Allow-Origin": "*" },
     // proxy is required in order to make api calls to express server while using hot-reload webpack server
-    // routes api fetch requests from localhost:8080/demo/*(webpack dev server) to localhost:3000/api/* (where our Express server is running)
+    // routes api fetch requests from localhost:8080/metrics/*(webpack dev server) to localhost:3000/api/* (where our Express server is running)
     proxy: {
-      "/demo/*": {
+      "/metrics/*": {
         target: "http://localhost:3000/",
         secure: false,
       },
