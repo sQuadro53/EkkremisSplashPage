@@ -186,42 +186,42 @@ const Docs = () => {
           
           <h2 id="eighth-header">Technologies</h2>
           <p>Ekkremis was build with:</p>
-          <div class='tech-stack'> 
+          <div className='tech-stack'> 
           <li>
             <p>Electron</p>
-            <img class='tech-stack-icons' src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/1200px-Electron_Software_Framework_Logo.svg.png' alt=''/>
+            <img className='tech-stack-icons' src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Electron_Software_Framework_Logo.svg/1200px-Electron_Software_Framework_Logo.svg.png' alt=''/>
           </li>
           <li>
             <p>TypeScript</p>
-            <img class='tech-stack-icons' src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png' alt=''/>
+            <img className='tech-stack-icons' src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png' alt=''/>
           </li>
           <li>
             <p>React</p>
-            <img class='tech-stack-icons' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png' alt=''/>
+            <img className='tech-stack-icons' src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png' alt=''/>
           </li>
           <li>
             <p>React Router</p>
-            <img class='tech-stack-icons' src='https://cdn.freebiesupply.com/logos/large/2x/react-router-logo-png-transparent.png' alt=''/>
+            <img className='tech-stack-icons' src='https://cdn.freebiesupply.com/logos/large/2x/react-router-logo-png-transparent.png' alt=''/>
           </li>
           <li>
             <p>Jest</p>
-            <img class='tech-stack-icons' src='https://www.pngfind.com/pngs/m/92-927312_jest-testing-hd-png-download.png' alt=''/>
+            <img className='tech-stack-icons' src='https://www.pngfind.com/pngs/m/92-927312_jest-testing-hd-png-download.png' alt=''/>
           </li>
           <li>
             <p>Node js</p>
-            <img class='tech-stack-icons' src='https://img.favpng.com/16/11/19/node-js-javascript-web-application-express-js-computer-software-png-favpng-cYmJvJyBDcTNbLdSRdNAceLyW.jpg' alt=''/>
+            <img className='tech-stack-icons' src='https://img.favpng.com/16/11/19/node-js-javascript-web-application-express-js-computer-software-png-favpng-cYmJvJyBDcTNbLdSRdNAceLyW.jpg' alt=''/>
           </li>
           <li>
             <p>Prometheus</p>
-            <img class='tech-stack-icons' src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prometheus_software_logo.svg/2066px-Prometheus_software_logo.svg.png' alt=''/>
+            <img className='tech-stack-icons' src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prometheus_software_logo.svg/2066px-Prometheus_software_logo.svg.png' alt=''/>
           </li>
           <li>
             <p>Chart js</p>
-            <img class='tech-stack-icons' src='https://avatars.githubusercontent.com/u/10342521?s=280&v=4' alt=''/>
+            <img className='tech-stack-icons' src='https://avatars.githubusercontent.com/u/10342521?s=280&v=4' alt=''/>
           </li>
           <li>
             <p>Webpack</p>
-            <img class='tech-stack-icons' src='https://seeklogo.com/images/W/webpack-logo-9E66EE203A-seeklogo.com.png' alt=''/>
+            <img className='tech-stack-icons' src='https://seeklogo.com/images/W/webpack-logo-9E66EE203A-seeklogo.com.png' alt=''/>
           </li>
           </div>
         </main>

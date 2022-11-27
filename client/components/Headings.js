@@ -3,8 +3,8 @@ import "../styles/Docs.css";
 
 const Headings = ({ headings, activeId }) => (
   <ul>
-    {headings.map((heading) => (
-      <li key={heading.id} className={heading.id === activeId ? "active" : ""}>
+    {headings.map((heading, index) => (
+      <li key={index} className={heading.id === activeId ? "active" : ""}>
         <a
           href={`#${heading.id}`}
           onClick={(e) => {
@@ -18,9 +18,9 @@ const Headings = ({ headings, activeId }) => (
         </a>
         {heading.items.length > 0 && (
           <ul>
-            {heading.items.map((child) => (
+            {heading.items.map((child, index) => (
               <li
-                key={child.id}
+                key={index}
                 className={child.id === activeId ? "active" : ""}
               >
                 <a
