@@ -12,7 +12,7 @@ const People = () => {
             alt="Rilo"
             width="120"
             height="120"
-            viewbox="0 0 16 16"
+            viewBox="0 0 16 16"
             className="headshot"
           ></img>
           <div className="crew-member">
@@ -26,7 +26,7 @@ const People = () => {
                 alt="github-logo"
                 width="30"
                 height="30"
-                viewbox="0 0 16 16"
+                viewBox="0 0 16 16"
               ></img>
             </a>
             <a href="https://www.linkedin.com/in/taywade" target="_blank">
@@ -35,7 +35,7 @@ const People = () => {
                 alt="linkedin-logo"
                 width="30"
                 height="30"
-                viewbox="0 0 16 16"
+                viewBox="0 0 16 16"
               ></img>
             </a>
           </div>
@@ -47,7 +47,7 @@ const People = () => {
             width="120"
             height="120"
             className="headshot"
-            // viewbox="0 0 16 16"
+            // viewBox="0 0 16 16"
           ></img>
           <div className="crew-member">
             <h4>Forest Leigh</h4>
@@ -60,7 +60,7 @@ const People = () => {
                 alt="github-logo"
                 width="30"
                 height="30"
-                // viewbox="0 0 16 16"
+                // viewBox="0 0 16 16"
               ></img>
             </a>
             <a href="https://www.linkedin.com/in/forestleigh/" target="_blank">
@@ -69,7 +69,7 @@ const People = () => {
                 alt="linkedin-logo"
                 width="30"
                 height="30"
-                viewbox="0 0 16 16"
+                viewBox="0 0 16 16"
               ></img>
             </a>
           </div>
@@ -80,7 +80,7 @@ const People = () => {
             alt="Cesar"
             width="120"
             height="120"
-            viewbox="0 0 16 16"
+            viewBox="0 0 16 16"
             className="headshot"
           ></img>
           <div className="crew-member">
@@ -94,7 +94,7 @@ const People = () => {
                 alt="github-logo"
                 width="30"
                 height="30"
-                viewbox="0 0 16 16"
+                viewBox="0 0 16 16"
               ></img>
             </a>
             <a href="https://www.linkedin.com/in/quintanilla-cesar" target="_blank">
@@ -103,7 +103,7 @@ const People = () => {
                 alt="linkedin-logo"
                 width="30"
                 height="30"
-                viewbox="0 0 16 16"
+                viewBox="0 0 16 16"
               ></img>
             </a>
           </div>
@@ -114,7 +114,7 @@ const People = () => {
             alt="Z"
             width="120"
             height="120"
-            viewbox="0 0 16 16"
+            viewBox="0 0 16 16"
             className="headshot"
           ></img>
           <div className="crew-member">
@@ -131,7 +131,7 @@ const People = () => {
                 alt="github-logo"
                 width="30"
                 height="30"
-                viewbox="0 0 16 16"
+                viewBox="0 0 16 16"
               ></img>
             </a>
             <a href="https://www.linkedin.com/in/lizihao/" target="_blank">
@@ -140,7 +140,7 @@ const People = () => {
                 alt="linkedin-logo"
                 width="30"
                 height="30"
-                viewbox="0 0 16 16"
+                viewBox="0 0 16 16"
               ></img>
             </a>
           </div>
@@ -151,7 +151,7 @@ const People = () => {
             alt="Matt"
             width="120"
             height="120"
-            viewbox="0 0 16 16"
+            viewBox="0 0 16 16"
             className="headshot"
           ></img>
           <div className="crew-member">
@@ -168,7 +168,7 @@ const People = () => {
                 alt="github-logo"
                 width="30"
                 height="30"
-                viewbox="0 0 16 16"
+                viewBox="0 0 16 16"
               ></img>
             </a>
             <a href="https://www.linkedin.com/in/matthewpan/" target="_blank">
@@ -177,7 +177,7 @@ const People = () => {
                 alt="linkedin-logo"
                 width="30"
                 height="30"
-                viewbox="0 0 16 16"
+                viewBox="0 0 16 16"
               ></img>
             </a>
           </div>
